@@ -148,7 +148,7 @@ def project_details(project_id):
     
     if project:
         # Redirect to a dynamic URL based on the project ID
-        return redirect(f"http://192.168.198.75:5000/room/{project_id}")
+        return redirect(f"http://127.0.0.1:5000/room/{project_id}")
     else:
         return "Project not found", 404
 

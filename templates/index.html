@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scene Weaver - Collaborative Script Writing</title>
+    <title>Chatify - Secure Messaging app</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
@@ -23,7 +23,7 @@
     </header>
     <!-- Genre Selection -->
     <section id="genre-selection">
-        <h2>Select Your Genre to Start Collaboration</h2>
+        <h2>Stay Connected with Chatify</h2>
         <form action="{{ url_for('create_room') }}" method="POST">
             <select name="genre" required>
                 {% for genre in genres %}
